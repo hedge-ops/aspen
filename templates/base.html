@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+
+    <title>
+      {%- if section.title -%}
+        {{ section.title }} — Grow the relationships that grow your career
+      {%- else -%}
+        {{ config.extra.site_name }}
+      {%- endif -%}
+    </title>
+
+    {% if section.description %}
+      <meta name="description" content="{{ section.description }}" />
+    {% else %}
+      <meta
+        name="description"
+        content="{{ config.extra.default_site_description }}"
+      />
+    {% endif %}
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body class="min-h-screen bg-white text-stone-800 antialiased">
+    {% block content %}{% endblock content %}
+  </body>
+</html>

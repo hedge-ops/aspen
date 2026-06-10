@@ -1,0 +1,15 @@
+# The URL the site will be built for (demo site, local builds only)
+base_url = "https://aspen-app.example.com"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = false
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+[markdown]
+highlighting.theme = "github-dark"
+
+[extra]
+site_name = "Aspen"
+default_site_description = "Aspen is a private relationship management app that helps you grow the 10-20 professional relationships that matter most to your career."

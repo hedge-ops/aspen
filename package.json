@@ -1,0 +1,13 @@
+{
+  "name": "aspen-site",
+  "private": true,
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./static/css/style.css --watch",
+    "css": "tailwindcss -i ./src/input.css -o ./static/css/style.css --minify",
+    "build": "npm run css && zola build"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.11"
+  }
+}
