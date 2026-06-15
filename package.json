@@ -2,7 +2,7 @@
   "name": "aspen-site",
   "private": true,
   "scripts": {
-    "dev": "tailwindcss -i ./src/input.css -o ./static/css/style.css --watch",
+    "dev": "zola serve && tailwindcss -i ./src/input.css -o ./static/css/style.css --watch",
     "css": "tailwindcss -i ./src/input.css -o ./static/css/style.css --minify",
     "build": "npm run css && zola build"
   },
