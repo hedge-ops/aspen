@@ -2,268 +2,244 @@
 
 {% block content %}
 <!-- Header -->
-<header class="sticky top-0 z-50 border-b border-stone-200 bg-white/80 backdrop-blur">
-  <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-    <a href="/" class="flex items-center gap-2">
-      <svg class="h-8 w-8" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="16" cy="16" r="16" fill="#059669" />
-        <path d="M16 5 L24 21 H8 Z" fill="#FCD34D" />
-        <rect x="14.5" y="21" width="3" height="6" rx="1" fill="#F5F5F4" />
-      </svg>
-      <span class="text-xl font-bold tracking-tight text-emerald-900">Aspen</span>
+<header
+  class="sticky top-0 z-40 border-b border-border/70 bg-sheepskin/85 backdrop-blur-sm"
+>
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+    <a href="/" class="group flex items-baseline gap-2" aria-label="Aspen, home">
+      <span class="font-display text-2xl font-medium tracking-tight text-espresso">Aspen</span>
+      <span class="h-1.5 w-1.5 translate-y-[-0.15rem] rounded-full bg-sage transition-colors group-hover:bg-sage-deep" aria-hidden="true"></span>
     </a>
-    <nav class="hidden items-center gap-8 text-sm font-medium text-stone-600 md:flex">
-      <a href="#features" class="transition hover:text-emerald-700">Features</a>
-      <a href="#how-it-works" class="transition hover:text-emerald-700">How It Works</a>
-      <a href="#testimonial" class="transition hover:text-emerald-700">Stories</a>
+    <nav class="hidden items-center gap-10 text-sm text-driftwood md:flex">
+      <a href="#features" class="transition-colors hover:text-espresso">What it does</a>
+      <a href="#how-it-works" class="transition-colors hover:text-espresso">How it works</a>
+      <a href="#story" class="transition-colors hover:text-espresso">Why Aspen</a>
     </nav>
     <a
-      href="#cta"
-      class="rounded-full bg-emerald-700 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-800"
+      href="#request"
+      class="rounded-full border border-espresso/20 px-5 py-2 text-sm font-medium text-espresso transition-colors hover:border-espresso hover:bg-espresso hover:text-sheepskin"
     >
-      Get Started
+      Request an invitation
     </a>
   </div>
 </header>
 
 <main>
   <!-- Hero -->
-  <section class="relative overflow-hidden bg-gradient-to-b from-emerald-50 via-amber-50/40 to-white">
-    <div class="mx-auto max-w-4xl px-6 pb-24 pt-20 text-center md:pb-32 md:pt-28">
-      <span
-        class="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-white px-4 py-1.5 text-sm font-medium text-emerald-800 shadow-sm"
-      >
-        🌿 Private by design — your data never leaves your device
-      </span>
-      <h1 class="mt-8 text-4xl font-extrabold tracking-tight text-stone-900 md:text-6xl">
-        Grow the relationships that
-        <span class="bg-gradient-to-r from-emerald-600 to-amber-500 bg-clip-text text-transparent">
-          grow your career</span
-        >
-      </h1>
-      <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-stone-600 md:text-xl">
-        An aspen grove looks like hundreds of trees, but underground it shares one
-        living root system. Your career works the same way. Aspen helps you tend
-        the 10–20 professional relationships your growth actually depends on.
+  <section class="relative overflow-hidden">
+    <div class="mx-auto max-w-4xl px-6 pb-28 pt-24 text-center md:pb-36 md:pt-32">
+      <p class="font-display text-lg italic text-driftwood" data-reveal>
+        A private place for the relationships that matter
       </p>
-      <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+      <h1
+        class="mx-auto mt-6 max-w-3xl text-balance font-display text-[clamp(2.75rem,7vw,5rem)] font-medium leading-[1.04] tracking-[-0.02em] text-espresso"
+        data-reveal
+        style="--reveal-i: 1"
+      >
+        Tend the few relationships that
+        <span class="relative whitespace-nowrap">
+          grow your career
+          <span class="absolute -bottom-1 left-0 h-px w-full bg-sage" aria-hidden="true"></span>
+        </span>
+      </h1>
+      <p
+        class="mx-auto mt-8 max-w-xl text-pretty text-lg leading-relaxed text-driftwood"
+        data-reveal
+        style="--reveal-i: 2"
+      >
+        Most careers turn on ten or twenty people. Aspen is a quiet, private
+        space to keep those relationships warm — to remember, prepare, and
+        follow through, without spreadsheets or surveillance.
+      </p>
+      <div
+        class="mt-11 flex flex-col items-center justify-center gap-x-8 gap-y-4 sm:flex-row"
+        data-reveal
+        style="--reveal-i: 3"
+      >
         <a
-          href="#cta"
-          class="w-full rounded-full bg-emerald-700 px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-emerald-700/20 transition hover:bg-emerald-800 sm:w-auto"
+          href="#request"
+          class="rounded-full bg-espresso px-8 py-3.5 text-base font-medium text-sheepskin transition-colors hover:bg-night"
         >
-          Download Aspen
+          Request an invitation
         </a>
         <a
           href="#how-it-works"
-          class="w-full rounded-full border border-stone-300 bg-white px-8 py-3.5 text-base font-semibold text-stone-700 transition hover:border-emerald-300 hover:text-emerald-800 sm:w-auto"
+          class="group inline-flex items-center gap-2 text-base font-medium text-espresso"
         >
           See how it works
+          <span class="text-sage-deep transition-transform group-hover:translate-x-1" aria-hidden="true">&rarr;</span>
         </a>
       </div>
-      <p class="mt-6 text-sm text-stone-500">
-        No cloud account required · No tracking · Free to try
+      <p class="mt-7 text-sm text-driftwood" data-reveal style="--reveal-i: 4">
+        Private by design · No cloud account · Yours alone
       </p>
     </div>
   </section>
 
   <!-- Features -->
-  <section id="features" class="bg-white py-20 md:py-28">
-    <div class="mx-auto max-w-6xl px-6">
-      <div class="mx-auto max-w-2xl text-center">
-        <h2 class="text-3xl font-bold tracking-tight text-stone-900 md:text-4xl">
+  <section id="features" class="scroll-mt-20 border-t border-border bg-linen">
+    <div class="mx-auto grid max-w-6xl gap-12 px-6 py-24 md:py-28 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
+      <div class="lg:sticky lg:top-28 lg:self-start">
+        <h2 class="text-balance font-display text-4xl font-medium leading-tight tracking-tight text-espresso md:text-5xl" data-reveal>
           Everything you need to tend your grove
         </h2>
-        <p class="mt-4 text-lg text-stone-600">
-          Aspen brings structure and intention to the people side of your work,
-          without spreadsheets, sticky notes, or surveillance.
+        <p class="mt-5 max-w-md text-pretty leading-relaxed text-driftwood" data-reveal style="--reveal-i: 1">
+          Aspen brings structure and intention to the people side of your work —
+          without the spreadsheets, the sticky notes, or the sense that you are
+          being watched.
         </p>
       </div>
-      <div class="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        <div class="rounded-2xl border border-stone-200 bg-stone-50 p-8 transition hover:shadow-md">
-          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-2xl">
-            🌱
+
+      <ul class="-mt-2">
+        <li class="py-7 pt-0" data-reveal>
+          <div class="flex items-baseline gap-4">
+            <span class="font-display text-xl font-medium text-sage-deep tabular-nums" aria-hidden="true">01</span>
+            <div>
+              <h3 class="font-display text-2xl font-medium text-espresso">Rooted on your device</h3>
+              <p class="mt-2 max-w-xl text-pretty leading-relaxed text-driftwood">Honest notes need a private home. Everything you write stays local — never sold, mined, or shared. Nothing leaves your device without your word.</p>
+            </div>
           </div>
-          <h3 class="mt-5 text-lg font-semibold text-stone-900">Rooted on your device</h3>
-          <p class="mt-2 leading-relaxed text-stone-600">
-            Honest notes need a private home. Everything you write stays local —
-            never sold, mined, or shared. Nothing leaves your device without your
-            say.
-          </p>
-        </div>
-        <div class="rounded-2xl border border-stone-200 bg-stone-50 p-8 transition hover:shadow-md">
-          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-100 text-2xl">
-            🍂
+        </li>
+        <li class="border-t border-border/80 py-7" data-reveal style="--reveal-i: 1">
+          <div class="flex items-baseline gap-4">
+            <span class="font-display text-xl font-medium text-sage-deep tabular-nums" aria-hidden="true">02</span>
+            <div>
+              <h3 class="font-display text-2xl font-medium text-espresso">Four quiet groves</h3>
+              <p class="mt-2 max-w-xl text-pretty leading-relaxed text-driftwood">Sort the people who matter into Align, Guide, Partner, and Network — so you always know who advocates for you, who you are growing, and who keeps you connected.</p>
+            </div>
           </div>
-          <h3 class="mt-5 text-lg font-semibold text-stone-900">Four strategic groves</h3>
-          <p class="mt-2 leading-relaxed text-stone-600">
-            Organize your people into Align, Guide, Partner, and Network — so you
-            always know who advocates for you, who you're growing, and who keeps
-            you connected.
-          </p>
-        </div>
-        <div class="rounded-2xl border border-stone-200 bg-stone-50 p-8 transition hover:shadow-md">
-          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-2xl">
-            🧭
+        </li>
+        <li class="border-t border-border/80 py-7" data-reveal style="--reveal-i: 2">
+          <div class="flex items-baseline gap-4">
+            <span class="font-display text-xl font-medium text-sage-deep tabular-nums" aria-hidden="true">03</span>
+            <div>
+              <h3 class="font-display text-2xl font-medium text-espresso">Arrive prepared</h3>
+              <p class="mt-2 max-w-xl text-pretty leading-relaxed text-driftwood">Before each conversation, Aspen gathers what happened last time, what you promised, and what to ask — so you begin where you left off, not from nothing.</p>
+            </div>
           </div>
-          <h3 class="mt-5 text-lg font-semibold text-stone-900">Show up prepared</h3>
-          <p class="mt-2 leading-relaxed text-stone-600">
-            Before every 1:1 or sync, Aspen surfaces what happened last time, what
-            you promised, and what to ask — so the conversation starts where it
-            should.
-          </p>
-        </div>
-        <div class="rounded-2xl border border-stone-200 bg-stone-50 p-8 transition hover:shadow-md">
-          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-100 text-2xl">
-            📓
+        </li>
+        <li class="border-t border-border/80 py-7" data-reveal style="--reveal-i: 3">
+          <div class="flex items-baseline gap-4">
+            <span class="font-display text-xl font-medium text-sage-deep tabular-nums" aria-hidden="true">04</span>
+            <div>
+              <h3 class="font-display text-2xl font-medium text-espresso">Keep your word</h3>
+              <p class="mt-2 max-w-xl text-pretty leading-relaxed text-driftwood">Track the commitments you make and the ones made to you. Trust is built on follow-through, and Aspen makes sure nothing quietly slips.</p>
+            </div>
           </div>
-          <h3 class="mt-5 text-lg font-semibold text-stone-900">Capture what matters</h3>
-          <p class="mt-2 leading-relaxed text-stone-600">
-            Journal the moments that count — the hallway conversation, the hard
-            feedback, the win you celebrated together — while they're still fresh.
-          </p>
-        </div>
-        <div class="rounded-2xl border border-stone-200 bg-stone-50 p-8 transition hover:shadow-md">
-          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-2xl">
-            ✅
+        </li>
+        <li class="border-t border-border/80 py-7" data-reveal style="--reveal-i: 4">
+          <div class="flex items-baseline gap-4">
+            <span class="font-display text-xl font-medium text-sage-deep tabular-nums" aria-hidden="true">05</span>
+            <div>
+              <h3 class="font-display text-2xl font-medium text-espresso">Hold the moments</h3>
+              <p class="mt-2 max-w-xl text-pretty leading-relaxed text-driftwood">Keep the hallway exchange, the hard feedback, the win you shared — captured in a line or two while it is still warm.</p>
+            </div>
           </div>
-          <h3 class="mt-5 text-lg font-semibold text-stone-900">Keep your word</h3>
-          <p class="mt-2 leading-relaxed text-stone-600">
-            Track the commitments you make and the ones made to you. Trust is built
-            on follow-through, and Aspen makes sure nothing slips.
-          </p>
-        </div>
-        <div class="rounded-2xl border border-stone-200 bg-stone-50 p-8 transition hover:shadow-md">
-          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-100 text-2xl">
-            💻
+        </li>
+        <li class="border-t border-border/80 py-7" data-reveal style="--reveal-i: 5">
+          <div class="flex items-baseline gap-4">
+            <span class="font-display text-xl font-medium text-sage-deep tabular-nums" aria-hidden="true">06</span>
+            <div>
+              <h3 class="font-display text-2xl font-medium text-espresso">Where your work already is</h3>
+              <p class="mt-2 max-w-xl text-pretty leading-relaxed text-driftwood">A composed desktop app for deep sessions and a CLI for the terminal. The same relationships, the same privacy, wherever you already work.</p>
+            </div>
           </div>
-          <h3 class="mt-5 text-lg font-semibold text-stone-900">Works where you do</h3>
-          <p class="mt-2 leading-relaxed text-stone-600">
-            A focused desktop app for deep sessions and a CLI for your terminal.
-            Same relationships, same privacy, wherever your work already happens.
-          </p>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   </section>
 
-  <!-- How It Works -->
-  <section id="how-it-works" class="bg-emerald-50/60 py-20 md:py-28">
-    <div class="mx-auto max-w-6xl px-6">
-      <div class="mx-auto max-w-2xl text-center">
-        <h2 class="text-3xl font-bold tracking-tight text-stone-900 md:text-4xl">
-          From scattered to rooted in three steps
+  <!-- How it works -->
+  <section id="how-it-works" class="scroll-mt-20 border-t border-border">
+    <div class="mx-auto max-w-6xl px-6 py-24 md:py-28">
+      <div class="max-w-2xl">
+        <h2 class="text-balance font-display text-4xl font-medium leading-tight tracking-tight text-espresso md:text-5xl" data-reveal>
+          From scattered to rooted, in three unhurried steps
         </h2>
-        <p class="mt-4 text-lg text-stone-600">
-          You don't need hundreds of contacts. You need a healthy grove.
+        <p class="mt-5 text-pretty leading-relaxed text-driftwood" data-reveal style="--reveal-i: 1">
+          You do not need hundreds of contacts. You need a healthy grove, tended
+          a little at a time.
         </p>
       </div>
-      <div class="mt-14 grid gap-10 md:grid-cols-3">
-        <div class="text-center">
-          <div
-            class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-emerald-700 text-xl font-bold text-white shadow-lg shadow-emerald-700/20"
-          >
-            1
-          </div>
-          <h3 class="mt-5 text-xl font-semibold text-stone-900">Plant</h3>
-          <p class="mt-2 leading-relaxed text-stone-600">
-            Choose the 10–20 people who move the needle in your career and set an
-            intention for each relationship.
-          </p>
-        </div>
-        <div class="text-center">
-          <div
-            class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-emerald-700 text-xl font-bold text-white shadow-lg shadow-emerald-700/20"
-          >
-            2
-          </div>
-          <h3 class="mt-5 text-xl font-semibold text-stone-900">Tend</h3>
-          <p class="mt-2 leading-relaxed text-stone-600">
-            Plan the next conversation, prepare with context, and capture what
-            happened while it's fresh.
-          </p>
-        </div>
-        <div class="text-center">
-          <div
-            class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-emerald-700 text-xl font-bold text-white shadow-lg shadow-emerald-700/20"
-          >
-            3
-          </div>
-          <h3 class="mt-5 text-xl font-semibold text-stone-900">Grow</h3>
-          <p class="mt-2 leading-relaxed text-stone-600">
-            Step back, reflect on the patterns, and watch consistent small actions
-            compound into a thriving network.
-          </p>
-        </div>
-      </div>
+
+      <ol class="mt-16 grid gap-12 md:grid-cols-3 md:gap-10">
+        <li class="border-t border-border pt-6" data-reveal>
+          <span class="font-display text-3xl font-medium text-sage-deep">I</span>
+          <h3 class="mt-4 font-display text-2xl font-medium text-espresso">Plant</h3>
+          <p class="mt-2 text-pretty leading-relaxed text-driftwood">Choose the ten or twenty people who move your career, and set a quiet intention for each relationship.</p>
+        </li>
+        <li class="border-t border-border pt-6" data-reveal style="--reveal-i: 1">
+          <span class="font-display text-3xl font-medium text-sage-deep">II</span>
+          <h3 class="mt-4 font-display text-2xl font-medium text-espresso">Tend</h3>
+          <p class="mt-2 text-pretty leading-relaxed text-driftwood">Plan the next conversation, arrive with context, and capture what happened while it is still fresh.</p>
+        </li>
+        <li class="border-t border-border pt-6" data-reveal style="--reveal-i: 2">
+          <span class="font-display text-3xl font-medium text-sage-deep">III</span>
+          <h3 class="mt-4 font-display text-2xl font-medium text-espresso">Grow</h3>
+          <p class="mt-2 text-pretty leading-relaxed text-driftwood">Step back, notice the patterns, and watch small, consistent acts of care compound over time.</p>
+        </li>
+      </ol>
     </div>
   </section>
 
-  <!-- Testimonial -->
-  <section id="testimonial" class="bg-white py-20 md:py-28">
-    <div class="mx-auto max-w-3xl px-6 text-center">
-      <div class="text-4xl">🌳</div>
-      <blockquote class="mt-6 text-2xl font-medium leading-relaxed text-stone-800 md:text-3xl">
-        “I used to wing every 1:1 and hope for the best. Aspen turned my
-        relationships into something I actually tend — and the difference showed
-        up in my career within months.”
-      </blockquote>
-      <div class="mt-8 flex items-center justify-center gap-4">
-        <div
-          class="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-100 font-semibold text-emerald-800"
-        >
-          JR
-        </div>
-        <div class="text-left">
-          <p class="font-semibold text-stone-900">Jordan Reyes</p>
-          <p class="text-sm text-stone-500">Engineering Manager</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Final CTA -->
-  <section id="cta" class="bg-gradient-to-br from-emerald-800 to-emerald-950 py-20 md:py-28">
-    <div class="mx-auto max-w-3xl px-6 text-center">
-      <h2 class="text-3xl font-bold tracking-tight text-white md:text-4xl">
-        Start tending your grove today
-      </h2>
-      <p class="mx-auto mt-4 max-w-xl text-lg text-emerald-100">
-        Your most important relationships deserve more than a contact list. Give
-        them roots.
+  <!-- Story / testimonial -->
+  <section id="story" class="scroll-mt-20 border-t border-border bg-linen">
+    <div class="mx-auto max-w-3xl px-6 py-24 text-center md:py-28">
+      <p class="font-display text-3xl font-normal italic leading-snug text-espresso md:text-4xl md:leading-snug" data-reveal>
+        “I used to wing every conversation and hope for the best. Aspen turned my
+        relationships into something I actually tend — and within months, the
+        difference showed up in my work.”
       </p>
-      <a
-        href="#"
-        class="mt-10 inline-block rounded-full bg-amber-400 px-10 py-4 text-base font-bold text-emerald-950 shadow-lg transition hover:bg-amber-300"
-      >
-        Download Aspen — Free
-      </a>
-      <p class="mt-4 text-sm text-emerald-200/80">
-        Available for macOS and Windows
+      <div class="mt-10 flex items-center justify-center gap-4" data-reveal style="--reveal-i: 1">
+        <span class="flex h-11 w-11 items-center justify-center rounded-full border border-sage/50 font-display text-lg font-medium text-sage-deep">JR</span>
+        <span class="text-left">
+          <span class="block font-medium text-espresso">Jordan Reyes</span>
+          <span class="block text-sm text-driftwood">Engineering Manager</span>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Request access -->
+  <section id="request" class="scroll-mt-20 border-t border-border bg-sheepskin">
+    <div class="mx-auto max-w-2xl px-6 py-24 text-center md:py-32">
+      <span class="mx-auto mb-8 block h-px w-10 bg-sage-deep" aria-hidden="true"></span>
+      <h2 class="text-balance font-display text-4xl font-medium leading-tight tracking-tight text-espresso md:text-5xl" data-reveal>
+        Give your most important relationships roots
+      </h2>
+      <p class="mx-auto mt-5 max-w-md text-pretty leading-relaxed text-driftwood" data-reveal style="--reveal-i: 1">
+        Aspen is in private beta for macOS and Windows. Ask for an invitation and
+        we will be in touch when your spot opens.
+      </p>
+      <div class="mt-10" data-reveal style="--reveal-i: 2">
+        <a
+          href="mailto:hello@getaspen.app?subject=Requesting%20an%20invitation%20to%20Aspen"
+          class="inline-block rounded-full bg-espresso px-9 py-4 text-base font-medium text-sheepskin transition-colors hover:bg-night"
+        >
+          Request an invitation
+        </a>
+      </div>
+      <p class="mt-5 text-sm text-driftwood" data-reveal style="--reveal-i: 3">
+        No newsletter. No tracking. One quiet email when there is room.
       </p>
     </div>
   </section>
 </main>
 
 <!-- Footer -->
-<footer class="border-t border-stone-200 bg-stone-50">
-  <div
-    class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-6 py-10 md:flex-row"
-  >
-    <div class="flex items-center gap-2">
-      <svg class="h-6 w-6" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="16" cy="16" r="16" fill="#059669" />
-        <path d="M16 5 L24 21 H8 Z" fill="#FCD34D" />
-        <rect x="14.5" y="21" width="3" height="6" rx="1" fill="#F5F5F4" />
-      </svg>
-      <span class="font-bold text-emerald-900">Aspen</span>
-      <span class="text-sm text-stone-500">— rooted relationships, growing careers</span>
-    </div>
-    <nav class="flex items-center gap-6 text-sm text-stone-600">
-      <a href="#features" class="transition hover:text-emerald-700">Features</a>
-      <a href="#how-it-works" class="transition hover:text-emerald-700">How It Works</a>
-      <a href="#cta" class="transition hover:text-emerald-700">Download</a>
+<footer class="border-t border-border bg-wool">
+  <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-6 py-12 md:flex-row">
+    <a href="/" class="flex items-baseline gap-2" aria-label="Aspen, home">
+      <span class="font-display text-xl font-medium text-espresso">Aspen</span>
+      <span class="h-1.5 w-1.5 translate-y-[-0.15rem] rounded-full bg-sage" aria-hidden="true"></span>
+      <span class="ml-1 text-sm text-driftwood">Rooted relationships, growing careers</span>
+    </a>
+    <nav class="flex items-center gap-8 text-sm text-driftwood">
+      <a href="#features" class="transition-colors hover:text-espresso">What it does</a>
+      <a href="#how-it-works" class="transition-colors hover:text-espresso">How it works</a>
+      <a href="#request" class="transition-colors hover:text-espresso">Request access</a>
     </nav>
-    <p class="text-sm text-stone-500">© 2026 Aspen. Made with 💚 in the Rockies.</p>
+    <p class="text-sm text-driftwood">© 2026 Aspen</p>
   </div>
 </footer>
 {% endblock content %}
